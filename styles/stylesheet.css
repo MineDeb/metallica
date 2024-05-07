@@ -1,0 +1,243 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.header__contacts-item {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-weight: 700;
+    text-decoration: none;
+    color: #6A759B;
+}
+
+.header__contacts-item > img {
+    margin-right: 10px;
+}
+
+.header__contacts-item > p {
+    margin: 5px;
+}
+
+.company {
+    min-height: 780px;
+    background: url("../assets/Company.png") center center/cover no-repeat;
+    position: relative;
+}
+
+.company > .container {
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    transform: translate(0, -50%);
+}
+
+.company__title {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.company__description {
+    font-size: 24px;
+    color: #F5F5F5;
+}
+
+.company__button {
+    background-color: transparent;
+    border: 1px #fff solid;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .25s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.company__button::after {
+    content: url('../assets/Arrow.svg');
+    margin: 0 0 0 10px;
+}
+
+.company__button:hover {
+    background-color: rgba(217, 217, 217, 0.1);
+}
+
+.article__title {
+    text-align: center;
+    font-size: 45px;
+    color: #21273D;
+    font-weight: 700;
+    margin: 70px auto 70px auto;
+}
+
+
+
+
+/*Production*/
+
+
+.production__column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.production__column > .production__card:nth-child(-n+3) {
+    margin-bottom: 30px;
+}
+
+.production__card {
+    width: 410px;
+    -webkit-box-shadow: 0px 0px 5px 4px rgba(34, 60, 80, 0.14);
+    -moz-box-shadow: 0px 0px 5px 4px rgba(34, 60, 80, 0.14);
+    box-shadow: 0px 0px 5px 4px rgba(34, 60, 80, 0.14);
+    border-radius: 15px;
+}
+
+.production__card-top {
+    height: 380px;
+    background-color: red;
+    border-radius: 15px 15px 0 0;
+}
+
+.production__card-bottom {
+    padding: 30px;
+}
+
+.production__subtitle {
+    color: #6A759B;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.production__description {
+    font-weight: 400;
+    color: #8E9399;
+}
+
+.gallery > div > span > img {
+    width: 100%;
+}
+
+.gallery {
+    width: 1040px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.gallery div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0px;
+    /* padding: 10px; */
+    flex: none;
+}
+
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+
+.gallery__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5% auto;
+}
+
+#prevBtn, #nextBtn {
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+
+/*Clients*/
+.clients__wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clients__wrap > span:nth-child(n+3) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 248px;
+}
+
+.clients__wrap > span > p {
+    color: #959A9F;
+    font-weight: 700;
+}
+
+
+.about__wrap {
+        position: relative;
+        padding: 40px 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        color: #959A9F;
+        font-weight: 700;
+}
+
+.about__wrap > span > img {
+    width: 200px;
+    height: 200px;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    background-color: #21273D;
+    position: absolute;
+}
+
+.about__wrap > .circle:nth-child(1) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 0 0 60px 0;
+}
+.about__wrap > .circle:nth-child(2) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0 0 0 60px;
+}
+.about__wrap > .circle:nth-child(3) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 0 60px 0 0;
+}
+.about__wrap > .circle:nth-child(4) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 60px 0 0 0;
+}
